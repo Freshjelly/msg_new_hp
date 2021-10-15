@@ -102,8 +102,9 @@ iframe.iframe{
 .adviser p{
     font-size: 1rem;
 }
-
-
+.adviser img{
+    max-height: 240px;
+}
 /* Privacy */
 .privacy h3{
     font-size: 1.3rem;
