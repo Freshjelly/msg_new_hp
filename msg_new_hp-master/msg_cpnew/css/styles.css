@@ -1482,6 +1482,80 @@ body {
   margin-top: var(--spacing-md);
 }
 
+/* ActiveCampaign Form Styling Override */
+.ac-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.ac-form-container ._form_5 {
+  max-width: 100% !important;
+}
+
+.ac-form-container ._form_5 form {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+.ac-form-container ._form_5 input[type="text"],
+.ac-form-container ._form_5 input[type="email"],
+.ac-form-container ._form_5 textarea {
+  width: 100% !important;
+  padding: var(--spacing-sm) var(--spacing-md) !important;
+  border: 2px solid var(--color-border) !important;
+  border-radius: var(--radius-md) !important;
+  font-size: 1rem !important;
+  font-family: var(--font-sans) !important;
+  transition: var(--transition-base) !important;
+  background-color: var(--color-bg-primary) !important;
+  margin-bottom: var(--spacing-md) !important;
+  box-sizing: border-box !important;
+}
+
+.ac-form-container ._form_5 input[type="text"]:focus,
+.ac-form-container ._form_5 input[type="email"]:focus,
+.ac-form-container ._form_5 textarea:focus {
+  outline: none !important;
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 4px rgba(0, 212, 170, 0.1) !important;
+}
+
+.ac-form-container ._form_5 label {
+  display: block !important;
+  margin-bottom: var(--spacing-xs) !important;
+  font-weight: 600 !important;
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-sans) !important;
+}
+
+.ac-form-container ._form_5 input[type="submit"] {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%) !important;
+  color: white !important;
+  padding: 1rem 2.5rem !important;
+  border: none !important;
+  border-radius: var(--radius-xl) !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  font-family: var(--font-sans) !important;
+  display: block !important;
+  margin: var(--spacing-lg) auto 0 !important;
+  box-shadow: 0 4px 14px 0 rgba(0, 212, 170, 0.25), 0 2px 4px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.ac-form-container ._form_5 input[type="submit"]:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px 0 rgba(0, 212, 170, 0.35), 0 4px 8px 0 rgba(0, 0, 0, 0.15) !important;
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%) !important;
+}
+
+.ac-form-container ._form_5 textarea {
+  resize: vertical !important;
+  min-height: 140px !important;
+}
+
 /* ===========================
    フッター
    =========================== */
