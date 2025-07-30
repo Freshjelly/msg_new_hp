@@ -2,49 +2,128 @@
 
 MSG Corpの新しいコーポレートサイトのソースコードです。
 
+## 🚀 最新アップデート
+
+### 2025年1月 - ヒーローセクション完全リデザイン
+- **モダンなUIデザイン**: より洗練された視覚デザインとタイポグラフィ
+- **テキスト可視性の改善**: 全てのテキスト要素の視認性を大幅改善
+- **レスポンシブ最適化**: モバイルとデスクトップの両方で最適な表示
+- **アニメーション強化**: スムーズなフェードイン効果と浮遊装飾
+- **健タメロゴ追加**: kentame.pngの追加とリンク統合
+
 ## プロジェクト構成
 
 ```
 msg_cpnew/
-├── index.html              # トップページ
-├── privacy-policy.html     # プライバシーポリシー
-├── terms-of-service.html   # 利用規約
-├── contact-handler.php     # お問い合わせフォーム処理
-├── styles.css             # スタイルシート
-├── scripts.js             # メインJavaScript
-├── analytics.js           # Google Analytics
-├── image-optimization.js  # 画像最適化
-├── structured-data.js     # 構造化データ
-├── robots.txt            # SEO用robots.txt
-└── sitemap.xml           # サイトマップ
+├── index.html              # トップページ（ヒーローセクション改善済み）
+├── kentame.png            # 健タメロゴ画像
+├── css/
+│   └── styles.css         # モダンなスタイルシート（大幅更新）
+├── js/
+│   ├── scripts.js         # メインJavaScript（改善済み）
+│   ├── analytics.js       # Google Analytics
+│   ├── image-optimization.js # 画像最適化
+│   └── structured-data.js # 構造化データ
+├── pages/
+│   ├── privacy-policy.html # プライバシーポリシー
+│   └── terms-of-service.html # 利用規約
+├── php/
+│   └── contact-handler.php # お問い合わせフォーム処理
+└── seo/
+    ├── robots.txt         # SEO用robots.txt
+    └── sitemap.xml        # サイトマップ
 ```
 
-## 機能
+## ✨ 主な機能
 
-- レスポンシブデザイン対応
-- SEO最適化（構造化データ、サイトマップ）
-- お問い合わせフォーム
-- Google Analytics連携
-- 画像最適化機能
+### デザイン・UI
+- **モダンなヒーローセクション**: 新しいレイアウトとビジュアル階層
+- **プレミアムボタンデザイン**: 角丸でエレガントなホバーエフェクト
+- **グラデーション背景**: 微細なパターンと色彩効果
+- **1行タイトル表示**: 全セクションのタイトルを統一した1行表示
 
-## 開発環境
+### レスポンシブ対応
+- **モバイル最適化**: タッチフレンドリーなインターフェース
+- **可変フォントサイズ**: clamp()関数による適応的タイポグラフィ
+- **柔軟なレイアウト**: 画面サイズに応じた最適な配置
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- PHP 7.4+
+### パフォーマンス
+- **SEO最適化**: 構造化データとメタタグの充実
+- **画像最適化**: 遅延読み込みと適切なフォーマット
+- **アニメーション最適化**: パフォーマンスを考慮したCSS3アニメーション
 
-## セットアップ
+### 統合機能
+- **お問い合わせフォーム**: バリデーション付きフォーム
+- **Google Analytics**: 詳細なアクセス解析
+- **外部リンク統合**: 健タメサイト (https://kentame.kamposupport.com/) への誘導
 
-1. リポジトリをクローン
+## 🛠️ 技術スタック
+
+### フロントエンド
+- **HTML5**: セマンティックマークアップ
+- **CSS3**: モダンなスタイリング（Grid, Flexbox, CSS変数）
+- **JavaScript (ES6+)**: モジュラーなスクリプト構成
+- **CSS アニメーション**: パフォーマンス最適化されたトランジション
+
+### バックエンド
+- **PHP 7.4+**: お問い合わせフォーム処理
+
+### 開発ツール
+- **Git**: バージョン管理
+- **Claude Code**: AI支援開発
+
+## 🚀 セットアップ
+
+### 1. リポジトリをクローン
 ```bash
-git clone git@github.com:Freshjelly/msg_new_hp.git
+git clone git@github.com:MSG-Corp-Inc/msgcorp.git
+cd msgcorp
+git checkout refactor/site-redesign
 ```
 
-2. Webサーバーの設定
+### 2. Webサーバーの設定
 - PHP対応のWebサーバー（Apache/Nginx）が必要
-- `msg_cpnew`ディレクトリをドキュメントルートに配置
+- `msg_new_hp-master/msg_cpnew`ディレクトリをドキュメントルートに配置
 
-## お問い合わせ
+### 3. 依存関係の確認
+- Lucide Icons CDN（自動読み込み）
+- Google Fonts（Noto Sans JP）
 
-MSG Corp: [お問い合わせフォーム](https://msgcorp.jp/contact)
+## 📝 更新履歴
+
+### 2025-01-30
+- **ヒーローセクション完全リデザイン**
+  - モダンなレイアウトと視覚階層の改善
+  - テキスト可視性問題の解決
+  - 1行タイトル表示の統一
+  - プレミアムボタンデザインの実装
+
+- **レスポンシブ対応強化**
+  - モバイルファーストアプローチ
+  - 可変フォントサイズの最適化
+  - タッチフレンドリーUI
+
+- **アセット追加**
+  - kentame.png ロゴの統合
+  - 健タメサイトへのリンク追加
+
+### 以前のバージョン
+- 基本的なコーポレートサイト機能
+- SEO最適化
+- お問い合わせフォーム
+
+## 🎯 今後の予定
+
+- [ ] ダークモード対応
+- [ ] 多言語対応（英語版）
+- [ ] PWA機能の追加
+- [ ] パフォーマンス最適化の継続
+
+## 📞 お問い合わせ
+
+- **MSG Corp 公式**: [お問い合わせフォーム](https://msgcorp.jp/contact)
+- **健タメ**: [https://kentame.kamposupport.com/](https://kentame.kamposupport.com/)
+
+## 📄 ライセンス
+
+© 2025 MSG Corp. All rights reserved.
