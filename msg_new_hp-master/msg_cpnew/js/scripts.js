@@ -28,7 +28,7 @@ class MSGWebsite {
     this.isMenuOpen = false;
     
     // セクションIDの配列
-    this.sectionIds = ['hero', 'vision', 'services', 'media', 'news', 'partners', 'company', 'careers', 'contact'];
+    this.sectionIds = ['hero', 'vision', 'what-we-do', 'services', 'media', 'news', 'partners', 'company', 'careers', 'contact'];
     
     // 初期化
     this.init();
