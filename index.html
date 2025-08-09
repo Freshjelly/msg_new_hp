@@ -43,7 +43,7 @@
     <link rel="apple-touch-icon" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MSGcope.jpg-t3pNeP862X1d4acI45N1lowdlWPl0p.jpeg">
     
     <!-- スタイルシート -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -65,14 +65,14 @@
                 
                 <!-- デスクトップナビゲーション -->
                 <nav class="nav nav--desktop">
-                    <button class="nav__link" data-scroll-to="hero">ホーム</button>
-                    <button class="nav__link" data-scroll-to="vision">ビジョン</button>
-                    <button class="nav__link" data-scroll-to="what-we-do">提供する価値</button>
-                    <button class="nav__link" data-scroll-to="services">サービス</button>
-                    <button class="nav__link" data-scroll-to="media">メディア</button>
-                    <button class="nav__link" data-scroll-to="news">ニュース</button>
-                    <button class="nav__link" data-scroll-to="company">会社概要</button>
-                    <button class="nav__link" data-scroll-to="contact">お問い合わせ</button>
+                    <a href="#hero" class="nav__link" data-scroll-to="hero">ホーム</a>
+                    <a href="#vision" class="nav__link" data-scroll-to="vision">ビジョン</a>
+                    <a href="#what-we-do" class="nav__link" data-scroll-to="what-we-do">提供する価値</a>
+                    <a href="#services" class="nav__link" data-scroll-to="services">サービス</a>
+                    <a href="#media" class="nav__link" data-scroll-to="media">メディア</a>
+                    <a href="#news" class="nav__link" data-scroll-to="news">ニュース</a>
+                    <a href="#company" class="nav__link" data-scroll-to="company">会社概要</a>
+                    <a href="#contact" class="nav__link" data-scroll-to="contact">お問い合わせ</a>
                 </nav>
                 
                 <!-- モバイルメニューボタン -->
@@ -84,14 +84,14 @@
             
             <!-- モバイルナビゲーション -->
             <nav class="nav nav--mobile" id="mobileNav" style="display: none;">
-                <button class="nav__link" data-scroll-to="hero">ホーム</button>
-                <button class="nav__link" data-scroll-to="vision">ビジョン</button>
-                <button class="nav__link" data-scroll-to="what-we-do">提供する価値</button>
-                <button class="nav__link" data-scroll-to="services">サービス</button>
-                <button class="nav__link" data-scroll-to="media">メディア</button>
-                <button class="nav__link" data-scroll-to="news">ニュース</button>
-                <button class="nav__link" data-scroll-to="company">会社概要</button>
-                <button class="nav__link" data-scroll-to="contact">お問い合わせ</button>
+                <a href="#hero" class="nav__link" data-scroll-to="hero">ホーム</a>
+                <a href="#vision" class="nav__link" data-scroll-to="vision">ビジョン</a>
+                <a href="#what-we-do" class="nav__link" data-scroll-to="what-we-do">提供する価値</a>
+                <a href="#services" class="nav__link" data-scroll-to="services">サービス</a>
+                <a href="#media" class="nav__link" data-scroll-to="media">メディア</a>
+                <a href="#news" class="nav__link" data-scroll-to="news">ニュース</a>
+                <a href="#company" class="nav__link" data-scroll-to="company">会社概要</a>
+                <a href="#contact" class="nav__link" data-scroll-to="contact">お問い合わせ</a>
             </nav>
         </div>
     </header>
@@ -397,65 +397,43 @@
                     <div class="tabs__content">
                         <!-- ニュースタブ -->
                         <div class="tabs__panel tabs__panel--active" data-panel="news">
-                            <article class="news-card">
-                                <div class="news-card__header">
-                                    <span class="news-card__date">2024.12.14</span>
-                                    <span class="badge badge--emerald">ニュース</span>
+                            <div class="empty">
+                                <h3>まだニュースはありません</h3>
+                                <p>新着はX(旧Twitter)で先行告知します。公開準備中です。</p>
+                                <div class="actions">
+                                    <a class="btn" href="#contact">お問い合わせ</a>
+                                    <a class="btn btn--outline" href="https://x.com/your_account" rel="me noopener">Xをフォロー</a>
                                 </div>
-                                <h3 class="news-card__title">サービス等に関する最新情報</h3>
-                                <p class="news-card__description">
-                                    KampoAI、ロイヤル漢方クラブ、Smart Functional Foodなど、各サービスの最新動向をお知らせします。
-                                </p>
-                            </article>
+                                <p class="meta">最終更新：2025-08-09</p>
+                            </div>
                         </div>
                         
                         <!-- プレスリリースタブ -->
                         <div class="tabs__panel" data-panel="press">
-                            <article class="news-card">
-                                <div class="news-card__header">
-                                    <span class="news-card__date">2024.12.10</span>
-                                    <span class="badge badge--blue">プレスリリース</span>
+                            <div class="empty">
+                                <h3>プレスリリースは準備中です</h3>
+                                <p>公開次第こちらに掲載します。メディア関係者の方はお問い合わせください。</p>
+                                <div class="actions">
+                                    <a class="btn" href="#contact">メディアお問い合わせ</a>
+                                    <a class="btn btn--outline" href="/seo/sitemap.xml">サイトマップ</a>
                                 </div>
-                                <h3 class="news-card__title">会社の情報</h3>
-                                <p class="news-card__description">
-                                    MSG株式会社の事業展開、新規事業、人事情報、業績発表など会社に関する重要な情報をお伝えします。
-                                </p>
-                            </article>
+                                <p class="meta">最終更新：2025-08-09</p>
+                            </div>
                         </div>
                         
                         <!-- お知らせタブ -->
                         <div class="tabs__panel" data-panel="notice">
-                            <article class="news-card">
-                                <div class="news-card__header">
-                                    <span class="news-card__date">2024.12.08</span>
-                                    <span class="badge badge--amber">お知らせ</span>
+                            <div class="empty">
+                                <h3>現在お知らせはありません</h3>
+                                <p>メンテナンスや仕様変更の情報を掲載します。必要に応じてステータスページもご確認ください。</p>
+                                <div class="actions">
+                                    <a class="btn" href="#contact">稼働状況お問い合わせ</a>
+                                    <a class="btn btn--outline" href="#contact">お問い合わせ</a>
                                 </div>
-                                <h3 class="news-card__title">システムの変更など</h3>
-                                <p class="news-card__description">
-                                    各種システムのメンテナンス情報、サービス仕様変更、その他運営に関するお知らせをご案内します。
-                                </p>
-                            </article>
+                                <p class="meta">最終更新：2025-08-09</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- 最新ニュース一覧 -->
-                <div class="grid grid--3" style="margin-top: 3rem;">
-                    <article class="news-card">
-                        <span class="news-card__date">2024.12.14</span>
-                        <h3 class="news-card__title">KampoAI 新機能リリース</h3>
-                        <p class="news-card__description">AIによる体質判定精度をさらに向上しました。</p>
-                    </article>
-                    <article class="news-card">
-                        <span class="news-card__date">2024.12.10</span>
-                        <h3 class="news-card__title">東洋医学×AI研究成果発表</h3>
-                        <p class="news-card__description">最新の学会で研究成果を報告しました。</p>
-                    </article>
-                    <article class="news-card">
-                        <span class="news-card__date">2024.12.08</span>
-                        <h3 class="news-card__title">日経新聞に掲載されました</h3>
-                        <p class="news-card__description">弊社の取り組みが日経新聞に紹介されました。</p>
-                    </article>
                 </div>
             </div>
         </section>
@@ -648,9 +626,10 @@
     <!-- 構造化データ -->
     <script src="structured-data.js"></script>
     
-    <!-- Google Analytics 4 -->
+    <!-- Google Analytics 4 - Replace with actual measurement ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script src="analytics.js"></script>
+    <script src="image-optimization.js" defer></script>
     
     <!-- JavaScriptファイル -->
     <script src="scripts.js"></script>
