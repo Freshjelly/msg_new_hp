@@ -1,12 +1,18 @@
-/* MSG株式会社ランディングページ - JavaScriptファイル
-   ES6構文を使用し、モジュール化された動的機能を実装 */
+/**
+ * MSG株式会社 コーポレートサイト メインJavaScript
+ * 
+ * @description タブ切り替え、スムーススクロール、モバイルメニュー、
+ *              フォーム送信処理などの動的機能を実装
+ * @version 1.0.0
+ * @author MSG Corp
+ */
 
 // ===========================
-// DOM要素の取得と初期化
+// メインクラス: サイト全体の機能を管理
 // ===========================
 class MSGWebsite {
   constructor() {
-    // DOM要素をキャッシュ
+    // DOM要素をキャッシュ（パフォーマンス最適化のため）
     this.elements = {
       header: document.getElementById('header'),
       mobileMenuButton: document.getElementById('mobileMenuButton'),
@@ -21,7 +27,7 @@ class MSGWebsite {
       currentYearSpan: document.getElementById('currentYear')
     };
     
-    // 現在のアクティブセクション
+    // 現在のアクティブセクション（スクロール位置に応じて更新）
     this.activeSection = 'hero';
     
     // モバイルメニューの状態
@@ -42,17 +48,21 @@ class MSGWebsite {
     this.checkActiveSection();
   }
   
-  // Lucideアイコンの初期化
+  /**
+   * Lucideアイコンの初期化
+   * 動的に追加されたアイコンを含めて再描画
+   */
   setupIcons() {
-    // Lucideアイコンを初期化
     if (typeof lucide !== 'undefined') {
       lucide.createIcons();
     }
   }
   
-  // DOM要素のキャッシュ
+  /**
+   * DOM要素のキャッシュ
+   * 頻繁にアクセスする要素を事前に取得してパフォーマンスを向上
+   */
   cacheElements() {
-    // メニューアイコンの取得
     const menuButton = this.elements.mobileMenuButton;
     if (menuButton) {
       this.elements.menuIcon = menuButton.querySelector('.menu-icon');
@@ -100,7 +110,7 @@ class MSGWebsite {
   }
   
   // ===========================
-  // モバイルメニュー機能
+  // モバイルメニュー機能: ハンバーガーメニューの開閉制御
   // ===========================
   toggleMobileMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -135,7 +145,7 @@ class MSGWebsite {
   }
   
   // ===========================
-  // スムーススクロール機能
+  // スムーススクロール機能: ページ内リンクの滑らかな移動
   // ===========================
   handleScrollClick(event) {
     event.preventDefault(); // デフォルトのアンカーリンク動作を防ぐ
@@ -204,7 +214,7 @@ class MSGWebsite {
   }
   
   // ===========================
-  // タブ機能
+  // タブ機能: 事業紹介セクションのタブ切り替え
   // ===========================
   handleTabClick(event) {
     const clickedTrigger = event.currentTarget;
@@ -231,7 +241,7 @@ class MSGWebsite {
   }
   
   // ===========================
-  // フォーム機能
+  // フォーム機能: お問い合わせフォームの非同期送信とバリデーション
   // ===========================
   async handleFormSubmit(event) {
     event.preventDefault();
@@ -261,7 +271,7 @@ class MSGWebsite {
         return;
       }
       
-      // サーバーへの送信
+      // サーバーへの送信（PHPバックエンドへのPOSTリクエスト）
       const response = await fetch('contact-handler.php', {
         method: 'POST',
         body: formData,
@@ -349,7 +359,7 @@ class MSGWebsite {
 }
 
 // ===========================
-// アニメーション機能（オプション）
+// アニメーション機能: スクロールに応じた要素のフェードイン
 // ===========================
 class AnimationObserver {
   constructor() {
@@ -363,7 +373,7 @@ class AnimationObserver {
   }
   
   init() {
-    // Intersection Observerがサポートされているかチェック
+    // Intersection Observerがサポートされているかチェック（IE11非対応）
     if ('IntersectionObserver' in window) {
       this.setupObserver();
     }
@@ -396,7 +406,7 @@ class AnimationObserver {
 }
 
 // ===========================
-// 初期化
+// 初期化: ページ読み込み完了時に全機能を起動
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {
   // メインサイトの初期化
@@ -410,10 +420,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ===========================
-// ユーティリティ関数
+// ユーティリティ関数: 汎用的な便利関数群
 // ===========================
 const utils = {
-  // デバウンス関数
+  /**
+   * デバウンス関数
+   * 連続した呼び出しを制限し、最後の呼び出しのみ実行
+   * @param {Function} func - 実行する関数
+   * @param {number} wait - 待機時間（ミリ秒）
+   */
   debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -426,7 +441,12 @@ const utils = {
     };
   },
   
-  // スロットル関数
+  /**
+   * スロットル関数
+   * 指定時間内に1回のみ関数を実行
+   * @param {Function} func - 実行する関数
+   * @param {number} limit - 制限時間（ミリ秒）
+   */
   throttle(func, limit) {
     let inThrottle;
     return function(...args) {
@@ -438,7 +458,10 @@ const utils = {
     };
   },
   
-  // ローカルストレージ操作
+  /**
+   * ローカルストレージ操作
+   * ブラウザのローカルストレージを安全に操作するヘルパー関数
+   */
   storage: {
     get(key) {
       try {

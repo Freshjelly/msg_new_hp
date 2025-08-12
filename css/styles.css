@@ -1,23 +1,28 @@
-/* MSG株式会社ランディングページ - モダンデザイン */
+/**
+ * MSG株式会社 コーポレートサイト スタイルシート
+ * 
+ * @description モダンなデザインとレスポンシブ対応を実現
+ * @version 1.0.0
+ */
 
-/* フォントインポート */
+/* フォントインポート: Google FontsからNoto Sans JPを読み込み */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
 
 /* ===========================
-   リセット・基本設定
+   CSS変数定義: サイト全体で使用するカラー、スペーシング等
    =========================== */
 :root {
-  /* カラーパレット - より洗練された色使い */
-  --color-primary: #00d4aa; /* 明るいティール */
+  /* メインカラーパレット */
+  --color-primary: #00d4aa; /* プライマリーカラー: 明るいティールグリーン */
   --color-primary-dark: #00a88a;
   --color-primary-light: #40e0d0;
   --color-primary-bg: rgba(0, 212, 170, 0.08);
   
-  --color-secondary: #667eea; /* ソフトパープル */
+  --color-secondary: #667eea; /* セカンダリーカラー: ソフトパープル */
   --color-secondary-dark: #5a67d8;
   --color-secondary-light: #7c8ff0;
   
-  --color-tertiary: #f6ad55; /* ウォームオレンジ */
+  --color-tertiary: #f6ad55; /* ターシャリーカラー: ウォームオレンジ */
   --color-tertiary-dark: #ed8936;
   --color-tertiary-light: #fbd38d;
   
