@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone:*)",
+      "Bash(rm:*)",
+      "Bash(mv:*)",
+      "Bash(grep:*)",
+      "Bash(git remote add:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git reset:*)",
+      "Bash(git pull:*)",
+      "Bash(git rm:*)",
+      "Bash(mkdir:*)",
+      "Bash(true)",
+      "Bash(git cherry-pick:*)",
+      "Bash(git init:*)",
+      "Bash(winget:*)",
+      "Bash(powershell:*)"
+    ],
+    "deny": []
+  }
+}
