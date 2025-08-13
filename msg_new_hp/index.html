@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ==================== SEOメタタグ ==================== -->
+    <title>MSG株式会社 | 東洋×西洋×AIで健康の未来をデザイン</title>
+    <meta name="description" content="MSG株式会社は東洋医学×西洋医学×AIの力で、KampoAI、ロイヤル漢方クラブ、Smart Functional Foodを展開。誰もが健やかに生きられる社会を創ります。">
+    <meta name="keywords" content="MSG株式会社,漢方,AI,東洋医学,西洋医学,KampoAI,ロイヤル漢方クラブ,Smart Functional Food,健タメ,ヘルスケア,健康,機能性食品">
+    <meta name="author" content="MSG株式会社">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#10b981">
+    
+    <!-- ==================== Open Graph (Facebook, LinkedIn等) ==================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MSG株式会社">
+    <meta property="og:title" content="MSG株式会社 | 東洋×西洋×AIで健康の未来をデザイン">
+    <meta property="og:description" content="MSG株式会社は東洋医学×西洋医学×AIの力で、KampoAI、ロイヤル漢方クラブ、Smart Functional Foodを展開。誰もが健やかに生きられる社会を創ります。">
+    <meta property="og:url" content="https://msg-corp.co.jp">
+    <meta property="og:image" content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MSGcope.jpg-t3pNeP862X1d4acI45N1lowdlWPl0p.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MSG株式会社 - Personal Health, Shared Future">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- ==================== Twitter Card ==================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@msg_corp">
+    <meta name="twitter:creator" content="@msg_corp">
+    <meta name="twitter:title" content="MSG株式会社 | 東洋×西洋×AIで健康の未来をデザイン">
+    <meta name="twitter:description" content="MSG株式会社は東洋医学×西洋医学×AIの力で、KampoAI、ロイヤル漢方クラブ、Smart Functional Foodを展開。誰もが健やかに生きられる社会を創ります。">
+    <meta name="twitter:image" content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MSGcope.jpg-t3pNeP862X1d4acI45N1lowdlWPl0p.jpeg">
+    <meta name="twitter:image:alt" content="MSG株式会社 - Personal Health, Shared Future">
+    
+    <!-- ==================== 検索エンジン最適化 ==================== -->
+    <link rel="canonical" href="https://msg-corp.co.jp">
+    <meta name="geo.region" content="JP-13">
+    <meta name="geo.placename" content="渋谷区, 東京都">
+    
+    <!-- ==================== Favicon ==================== -->
+    <link rel="icon" type="image/jpeg" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MSGcope.jpg-t3pNeP862X1d4acI45N1lowdlWPl0p.jpeg">
+    <link rel="apple-touch-icon" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MSGcope.jpg-t3pNeP862X1d4acI45N1lowdlWPl0p.jpeg">
+    
+    <!-- ==================== スタイルシート ==================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- ==================== Lucide Icons CDN ==================== -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- ========================================
+         ヘッダーセクション
+         固定ヘッダーでスクロール時も常に表示
+         ======================================== -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <!-- ロゴセクション: クリックでトップにスクロール -->
+                <div class="header__logo">
+                    <button class="logo-button" data-scroll-to="hero">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MSGcope.jpg-t3pNeP862X1d4acI45N1lowdlWPl0p.jpeg" 
+                             alt="MSG株式会社ロゴ" 
+                             class="logo-image">
+                        <span class="logo-text">MSG株式会社</span>
+                    </button>
+                </div>
+                
+                <!-- デスクトップナビゲーション: PC向けメニュー -->
+                <nav class="nav nav--desktop">
+                    <a href="#hero" class="nav__link" data-scroll-to="hero">ホーム</a>
+                    <a href="#vision" class="nav__link" data-scroll-to="vision">ビジョン</a>
+                    <a href="#what-we-do" class="nav__link" data-scroll-to="what-we-do">提供する価値</a>
+                    <a href="#services" class="nav__link" data-scroll-to="services">サービス</a>
+                    <a href="#media" class="nav__link" data-scroll-to="media">メディア</a>
+                    <a href="#news" class="nav__link" data-scroll-to="news">ニュース</a>
+                    <a href="#company" class="nav__link" data-scroll-to="company">会社概要</a>
+                    <a href="#contact" class="nav__link" data-scroll-to="contact">お問い合わせ</a>
+                </nav>
+                
+                <!-- モバイルメニューボタン: スマホ向けハンバーガーメニュー -->
+                <button class="mobile-menu-button" id="mobileMenuButton">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon" style="display: none;"></i>
+                </button>
+            </div>
+            
+            <!-- モバイルナビゲーション: スマホ向けドロップダウンメニュー -->
+            <nav class="nav nav--mobile" id="mobileNav" style="display: none;">
+                <a href="#hero" class="nav__link" data-scroll-to="hero">ホーム</a>
+                <a href="#vision" class="nav__link" data-scroll-to="vision">ビジョン</a>
+                <a href="#what-we-do" class="nav__link" data-scroll-to="what-we-do">提供する価値</a>
+                <a href="#services" class="nav__link" data-scroll-to="services">サービス</a>
+                <a href="#media" class="nav__link" data-scroll-to="media">メディア</a>
+                <a href="#news" class="nav__link" data-scroll-to="news">ニュース</a>
+                <a href="#company" class="nav__link" data-scroll-to="company">会社概要</a>
+                <a href="#contact" class="nav__link" data-scroll-to="contact">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================
+         メインコンテンツ
+         ======================================== -->
+    <main>
+        <!-- ========================================
+             ヒーローセクション
+             トップページのメインビジュアル
+             ======================================== -->
+        <section class="hero" id="hero">
+            <div class="hero__bg"></div>
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__main">
+                        <h1 class="hero__title">
+                            <span class="hero__title-en">True health belongs to everyone.</span>
+                            <span class="hero__title-ja">健康はすべての人の幸せのためにある。</span>
+                        </h1>
+                        
+                        <div class="hero__description">
+                            <p class="hero__description-main">
+                                MSGは、<strong>西洋医学 × 東洋の叡智 × AIテクノロジー</strong>で、<br>
+                                あなたの体と心に寄り添い、"100年時代"を健やかに生きる<br>
+                                すべての人へ、真のウェルビーイングを届けます。
+                            </p>
+                            <p class="hero__description-sub">
+                                人生100年時代、あなたは"幸福・健康"を実感できていますか？
+                            </p>
+                        </div>
+                        
+                        <div class="hero__actions">
+                            <button class="btn btn--primary btn--lg" data-scroll-to="vision">
+                                <span>ビジョンを見る</span>
+                                <i data-lucide="arrow-right" class="btn__icon"></i>
+                            </button>
+                            <button class="btn btn--outline btn--lg" data-scroll-to="services">
+                                <span>サービスを探す</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 装飾要素: 背景アニメーション用 -->
+            <div class="hero__decoration hero__decoration--1"></div>
+            <div class="hero__decoration hero__decoration--2"></div>
+            <div class="hero__decoration hero__decoration--3"></div>
+        </section>
+
+        <!-- ========================================
+             ビジョンセクション
+             企業理念・ミッション・ビジョンの紹介
+             ======================================== -->
+        <section class="section section--white" id="vision">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">Our Vision</div>
+                    <h2 class="section__title section__title--single-line">Personal Health, Shared Future.</h2>
+                    <p class="section__subtitle">一人の健康が社会全体の幸福を支える</p>
+                </div>
+                
+                <div class="grid grid--3">
+                    <!-- 経営理念カード: 企業の基本的な理念 -->
+                    <article class="card">
+                        <div class="card__icon-wrapper card__icon-wrapper--emerald">
+                            <i data-lucide="target" class="card__icon"></i>
+                        </div>
+                        <h3 class="card__title">経営理念</h3>
+                        <p class="card__description" style="font-size: 0.85em; font-style: italic; margin-bottom: 0.5rem;">
+                            Creating a society where mind and body thrive in harmony and happiness.
+                        </p>
+                        <p class="card__description">
+                            心身ともに健やかで、幸せと喜びを感じられる世界を実現する。
+                        </p>
+                    </article>
+                    
+                    <!-- ミッションカード: 企業の使命 -->
+                    <article class="card">
+                        <div class="card__icon-wrapper card__icon-wrapper--blue">
+                            <i data-lucide="lightbulb" class="card__icon"></i>
+                        </div>
+                        <h3 class="card__title">ミッション</h3>
+                        <p class="card__description" style="font-size: 0.85em; font-style: italic; margin-bottom: 0.5rem;">
+                            Enhancing lifelong happiness through healthy living.
+                        </p>
+                        <p class="card__description">
+                            健康な生活を通じて、生涯幸福度の向上に寄与する
+                        </p>
+                        <p class="card__description" style="font-size: 0.9em; margin-top: 0.5rem;">
+                            東西医療の叡智とテクノロジーの力で、人が"自分らしく生きる力"を取り戻す
+                        </p>
+                    </article>
+                    
+                    <!-- ビジョンカード: 目指す未来像 -->
+                    <article class="card">
+                        <div class="card__icon-wrapper card__icon-wrapper--amber">
+                            <i data-lucide="shield" class="card__icon"></i>
+                        </div>
+                        <h3 class="card__title">ビジョン</h3>
+                        <p class="card__description" style="font-size: 0.85em; font-style: italic; margin-bottom: 0.5rem;">
+                            Creating accessible, safe, and satisfying healthcare for all.
+                        </p>
+                        <p class="card__description">
+                            すべての人が安心・安全・満足できるヘルスケアの創造
+                        </p>
+                        <p class="card__description" style="font-size: 0.9em; margin-top: 0.5rem;">
+                            すべての人が、安全かつ満足できるヘルスケアにアクセスできる世界を創造する
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             What We Do｜提供する価値セクション
+             3つのコアバリューを紹介
+             ======================================== -->
+        <section class="section section--gradient" id="what-we-do">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">What We Do</div>
+                    <h2 class="section__title">提供する価値</h2>
+                    <p class="section__subtitle" style="font-style: italic; margin-bottom: 0.5rem;">
+                        We build enduring value.
+                    </p>
+                    <p class="section__subtitle">私たちは、商品を"提供する"のではなく、"売れ続ける価値"を創造する。</p>
+                </div>
+                <div class="grid grid--3">
+                    <article class="value-card">
+                        <div class="value-card__number">01</div>
+                        <h3 class="value-card__title">商品開発 × ブランディング</h3>
+                        <p class="value-card__subtitle">「Design to Win. Build to Last.」</p>
+                        <p class="value-card__description">売るためから始める逆算設計。</p>
+                        <ul class="value-card__list">
+                            <li>原料の厳選 × 訴求キーワード × パッケージ戦略</li>
+                            <li>専門家監修で信頼性の高い設計</li>
+                        </ul>
+                    </article>
+                    <article class="value-card">
+                        <div class="value-card__number">02</div>
+                        <h3 class="value-card__title">メディア連携 × PRプロモーション</h3>
+                        <p class="value-card__subtitle">「Be Seen. Be Trusted. Be Desired.」</p>
+                        <p class="value-card__description">信用と共感まで届けるPR戦略。</p>
+                        <ul class="value-card__list">
+                            <li>新聞・出版社・美容メディアとの連携</li>
+                            <li>Yahoo!・TRILLなどで露出継続</li>
+                        </ul>
+                    </article>
+                    <article class="value-card">
+                        <div class="value-card__number">03</div>
+                        <h3 class="value-card__title">販促 × 継続購入支援</h3>
+                        <p class="value-card__subtitle">「Catch the Eye. Keep the Heart.」</p>
+                        <p class="value-card__description">"買いたくなる・続けたくなる"仕掛け。</p>
+                        <ul class="value-card__list">
+                            <li>専門POP・ECディスプレイ演出</li>
+                            <li>季節に応じた定期購入ツール</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             サービスセクション
+             主要サービスの紹介
+             ======================================== -->
+        <section class="section section--white" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">Our Services</div>
+                    <h2 class="section__title">MSGのサービス</h2>
+                    <p class="section__subtitle">東西医療とAIの融合による革新的なヘルスケアソリューション</p>
+                </div>
+                
+                <div class="grid grid--3">
+                    <!-- KampoAIカード: AIと東洋医学の融合サービス -->
+                    <article class="service-card">
+                        <div class="service-card__icon-wrapper service-card__icon-wrapper--emerald">
+                            <i data-lucide="brain" class="service-card__icon"></i>
+                        </div>
+                        <h3 class="service-card__title">KampoAI</h3>
+                        <p class="service-card__subtitle">伝統を、AIで再定義する</p>
+                        <p class="service-card__description">
+                            AIと東洋医学を融合し、パーソナライズされた健康体験を提供します。中医体質九分類とビッグデータを活用した革新的なアプローチです。
+                        </p>
+                        <div class="tags">
+                            <span class="tag">AI診断</span>
+                            <span class="tag">体質分析</span>
+                            <span class="tag">個別提案</span>
+                        </div>
+                    </article>
+                    
+                    <!-- ロイヤル漢方クラブカード: 専門家による漢方サポート -->
+                    <article class="service-card">
+                        <div class="service-card__icon-wrapper service-card__icon-wrapper--blue">
+                            <i data-lucide="users" class="service-card__icon"></i>
+                        </div>
+                        <h3 class="service-card__title">ロイヤル漢方クラブ</h3>
+                        <p class="service-card__subtitle">専門性が、漢方の真価をつなぐ</p>
+                        <p class="service-card__description">
+                            専門家による漢方サポートとマッチングサービス。医師・薬剤師・研究者による質の高い漢方実践をサポートします。
+                        </p>
+                        <div class="tags">
+                            <span class="tag">専門家監修</span>
+                            <span class="tag">オンライン相談</span>
+                            <span class="tag">マッチング</span>
+                        </div>
+                    </article>
+                    
+                    <!-- Smart Functional Foodカード: 機能性食品プロジェクト -->
+                    <article class="service-card">
+                        <div class="service-card__icon-wrapper service-card__icon-wrapper--amber">
+                            <i data-lucide="leaf" class="service-card__icon"></i>
+                        </div>
+                        <h3 class="service-card__title">Smart Functional Food</h3>
+                        <p class="service-card__subtitle" style="font-style: italic; font-size: 0.85em; margin-bottom: 0.5rem;">
+                            "From Idea to Impact: The functionality of food creates happiness."
+                        </p>
+                        <p class="service-card__subtitle">アイデアから、社会的インパクトへ。— 食品の機能が幸福を創り出す。</p>
+                        <p class="service-card__description">
+                            MSGが運営するSmart Functional Food Project（Sフードプロジェクト）は、健康実現のために「売れる＋売れ続ける」商品をプロデュースする全方位型支援プラットフォームです。
+                        </p>
+                        <div class="tags">
+                            <span class="tag">商品開発</span>
+                            <span class="tag">ブランディング</span>
+                            <span class="tag">販促支援</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             メディアセクション
+             健タメ！の紹介
+             ======================================== -->
+        <section class="section section--gradient" id="media">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">Media</div>
+                    <div class="kentame-logo" style="margin: 1rem 0 2rem 0; text-align: center;">
+                        <a href="https://kentame.kamposupport.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/kentame.png" alt="健タメ！" style="max-height: 80px; height: auto;">
+                        </a>
+                    </div>
+                    <p class="section__subtitle">読んで行動につながるヘルスメディア</p>
+                    <p class="section__description">「1記事読めば、悩みが軽くなる」体験型記事を多数掲載</p>
+                    <div class="section__cta" style="margin-top: 1.5rem;">
+                        <a href="https://kentame.kamposupport.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
+                            健タメ！を見る
+                            <i data-lucide="external-link" class="btn__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="grid grid--3">
+                    <article class="media-card">
+                        <div class="media-card__image">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_nw4l4onw4l4onw4l-03x4OL5GPIGd9t1PJ2DtaSH9NhC3BR.jpeg" 
+                                 alt="専門家による医療相談" 
+                                 class="media-card__img"
+                                 loading="lazy">
+                        </div>
+                        <h3 class="media-card__title">専門家による解決策</h3>
+                        <p class="media-card__description">
+                            不調に対する解決策を薬剤師や医師などの専門家が具体的に提示します
+                        </p>
+                    </article>
+                    
+                    <article class="media-card">
+                        <div class="media-card__image">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_z97zfyz97zfyz97z-8XHdJElepWkYITuEwI5rOFkG38Usq4.jpeg" 
+                                 alt="体験談を書く女性" 
+                                 class="media-card__img"
+                                 loading="lazy">
+                        </div>
+                        <h3 class="media-card__title">共感性の高い体験談</h3>
+                        <p class="media-card__description">
+                            身近なトラブルにまつわる具体的な体験談で「気づき」から「行動」へ導きます
+                        </p>
+                    </article>
+                    
+                    <article class="media-card">
+                        <div class="media-card__image">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_f1idopf1idopf1id-yTwfbraBO8XCqTdULAl4GLcM6GCYoO.jpeg" 
+                                 alt="オンライン医療相談" 
+                                 class="media-card__img"
+                                 loading="lazy">
+                        </div>
+                        <h3 class="media-card__title">直接相談可能</h3>
+                        <p class="media-card__description">
+                            記事を読んで興味を持ったらその場で専門家に相談できる高い実用性を提供
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ニュースセクション
+             タブ式の最新情報表示
+             ======================================== -->
+        <section class="section section--white" id="news">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">News</div>
+                    <h2 class="section__title">最新ニュース</h2>
+                    <p class="section__subtitle">私たちの"今"が未来をつくる</p>
+                </div>
+                
+                <!-- タブコンテンツ: 3種類の情報をタブで切り替え -->
+                <div class="tabs">
+                    <div class="tabs__list">
+                        <button class="tabs__trigger tabs__trigger--active" data-tab="news">ニュース</button>
+                        <button class="tabs__trigger" data-tab="press">プレスリリース</button>
+                        <button class="tabs__trigger" data-tab="notice">お知らせ</button>
+                    </div>
+                    
+                    <div class="tabs__content">
+                        <!-- ニュースタブ: 一般ニュース -->
+                        <div class="tabs__panel tabs__panel--active" data-panel="news">
+                            <div class="empty">
+                                <h3>まだニュースはありません</h3>
+                                <p>新着はX(旧Twitter)で先行告知します。公開準備中です。</p>
+                                <div class="actions">
+                                    <a class="btn" href="#contact">お問い合わせ</a>
+                                    <a class="btn btn--outline" href="https://x.com/your_account" rel="me noopener">Xをフォロー</a>
+                                </div>
+                                <p class="meta">最終更新：2025-08-09</p>
+                            </div>
+                        </div>
+                        
+                        <!-- プレスリリースタブ: メディア向け情報 -->
+                        <div class="tabs__panel" data-panel="press">
+                            <div class="empty">
+                                <h3>プレスリリースは準備中です</h3>
+                                <p>公開次第こちらに掲載します。メディア関係者の方はお問い合わせください。</p>
+                                <div class="actions">
+                                    <a class="btn" href="#contact">メディアお問い合わせ</a>
+                                    <a class="btn btn--outline" href="/seo/sitemap.xml">サイトマップ</a>
+                                </div>
+                                <p class="meta">最終更新：2025-08-09</p>
+                            </div>
+                        </div>
+                        
+                        <!-- お知らせタブ: サービス関連情報 -->
+                        <div class="tabs__panel" data-panel="notice">
+                            <div class="empty">
+                                <h3>現在お知らせはありません</h3>
+                                <p>メンテナンスや仕様変更の情報を掲載します。必要に応じてステータスページもご確認ください。</p>
+                                <div class="actions">
+                                    <a class="btn" href="#contact">稼働状況お問い合わせ</a>
+                                    <a class="btn btn--outline" href="#contact">お問い合わせ</a>
+                                </div>
+                                <p class="meta">最終更新：2025-08-09</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             パートナーセクション
+             投資家・連携企業向け情報
+             ======================================== -->
+        <section class="section section--gradient" id="partners">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">Partnership</div>
+                    <h2 class="section__title section__title--single-line" style="font-style: italic; margin-bottom: 0.5rem;">
+                        Health Revolution, Co-Created.
+                    </h2>
+                    <h2 class="section__title section__title--single-line">共創が拓く、新しい健康の常識</h2>
+                    <p class="section__subtitle">投資家・連携企業向けパートナーシップ</p>
+                </div>
+                
+                <div class="grid grid--3">
+                    <article class="partner-card">
+                        <div class="partner-card__icon-wrapper partner-card__icon-wrapper--emerald">
+                            <i data-lucide="building-2" class="partner-card__icon"></i>
+                        </div>
+                        <h3 class="partner-card__title">官民連携プロジェクト</h3>
+                        <p class="partner-card__description">
+                            自治体との連携による地域ヘルスケア向上プロジェクトを推進しています
+                        </p>
+                    </article>
+                    
+                    <article class="partner-card">
+                        <div class="partner-card__icon-wrapper partner-card__icon-wrapper--blue">
+                            <i data-lucide="microscope" class="partner-card__icon"></i>
+                        </div>
+                        <h3 class="partner-card__title">学術・大学連携</h3>
+                        <p class="partner-card__description">
+                            研究機関との共同研究により、エビデンスに基づく健康ソリューションを開発
+                        </p>
+                    </article>
+                    
+                    <article class="partner-card">
+                        <div class="partner-card__icon-wrapper partner-card__icon-wrapper--amber">
+                            <i data-lucide="globe" class="partner-card__icon"></i>
+                        </div>
+                        <h3 class="partner-card__title">OEM開発・事業参画</h3>
+                        <p class="partner-card__description">
+                            企業様との協業による新たなヘルスケアソリューションの創出をサポート
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             会社概要セクション
+             企業情報とアクセス情報
+             ======================================== -->
+        <section class="section section--white" id="company">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">Company Profile</div>
+                    <h2 class="section__title">会社概要</h2>
+                    <p class="section__subtitle">健康の未来をデザインする企業</p>
+                </div>
+                
+                <div class="company-content">
+                    <div class="company-info">
+                        <div class="info-card">
+                            <h3 class="info-card__title">企業情報</h3>
+                            <dl class="info-list">
+                                <div class="info-list__item">
+                                    <dt>設立</dt>
+                                    <dd>2016年</dd>
+                                </div>
+                                <div class="info-list__item">
+                                    <dt>所在地</dt>
+                                    <dd>東京都渋谷区</dd>
+                                </div>
+                                <div class="info-list__item">
+                                    <dt>代表</dt>
+                                    <dd>飯 寿行</dd>
+                                </div>
+                                <div class="info-list__item">
+                                    <dt>資本金</dt>
+                                    <dd>9,500万円</dd>
+                                </div>
+                                <div class="info-list__item">
+                                    <dt>従業員</dt>
+                                    <dd>60名（医師・薬剤師含む）</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3 class="info-card__title">主な提携機関</h3>
+                            <ul class="partner-list">
+                                <li>日本サプリメント協会</li>
+                                <li>国際統合治療協会</li>
+                                <li>食と健康推進協会</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="company-access">
+                        <div class="access-card">
+                            <h3 class="access-card__title">
+                                <i data-lucide="map-pin" class="access-card__icon"></i>
+                                アクセス
+                            </h3>
+                            <div class="access-card__map">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747942375!2d139.70280831525394!3d35.65858098020086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca7595d7717%3A0x7e0d2f2e0d2f2e0d!2z5p2x5Lqs6YO95riL6LC35Yy65riL6LC3My0xMC0xMA!5e0!3m2!1sja!2sjp!4v1640995200000!5m2!1sja!2sjp"
+                                    width="100%" 
+                                    height="300" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="MSG株式会社 所在地">
+                                </iframe>
+                            </div>
+                            <div class="access-card__info">
+                                <p>〒150-0002</p>
+                                <p>東京都渋谷区渋谷3-6-2 YAGI bldg.2 3F</p>
+                                <p>JR渋谷駅より徒歩5分</p>
+                                <p>東京メトロ各線渋谷駅より徒歩3分</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             採用セクション
+             採用情報と募集要項
+             ======================================== -->
+        <section class="section section--gradient" id="careers">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">Careers</div>
+                    <h2 class="section__title">採用情報</h2>
+                    <p class="section__subtitle">共に「健康」を変える仲間を募集しています。</p>
+                </div>
+                
+                <div class="careers-content">
+                    <p class="careers-description">医療、食品、AI分野でのキャリアに興味がある方はお問い合わせください。</p>
+                    
+                    <div class="section__cta">
+                        <a href="mailto:recruit@msg-corp.co.jp" class="btn btn--primary">応募する</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             お問い合わせセクション
+             ActiveCampaignフォーム埋め込み
+             ======================================== -->
+        <section class="section section--white" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <div class="badge badge--primary">Contact</div>
+                    <h2 class="section__title">お問い合わせ</h2>
+                    <p class="section__subtitle">共に未来を築こう</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3 class="contact-card__title">お気軽にお問い合わせください</h3>
+                    <p class="contact-card__description">
+                        商品・サービスに関するご質問、メディア取材、導入相談など、お気軽にご連絡ください
+                    </p>
+                    
+                    <!-- ActiveCampaign Contact Form: 外部フォームサービス -->
+                    <div class="ac-form-container">
+                        <div class="_form_5"></div>
+                        <script src="https://msgcorp.activehosted.com/f/embed.php?id=5" type="text/javascript" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================
+         フッター
+         サイトマップとコピーライト
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <a href="#services">KampoAI</a>
+                <a href="#services">ロイヤル漢方クラブ</a>
+                <a href="#services">Smart Functional Food</a>
+                <a href="#media">健タメ！</a>
+                <a href="#company">会社概要</a>
+                <a href="#careers">採用情報</a>
+                <a href="#news">ニュース</a>
+                <a href="privacy-policy.html">プライバシーポリシー</a>
+                <a href="terms-of-service.html">利用規約</a>
+            </nav>
+            <p>© 2025 MSG株式会社</p>
+        </div>
+    </footer>
+
+    <!-- ==================== 構造化データ (SEO向け) ==================== -->
+    <script src="js/structured-data.js"></script>
+    
+    <!-- ==================== Google Analytics 4 - Replace with actual measurement ID ==================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/image-optimization.js" defer></script>
+    
+    <!-- ==================== JavaScriptファイル ==================== -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
