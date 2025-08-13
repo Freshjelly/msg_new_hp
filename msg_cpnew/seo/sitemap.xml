@@ -6,24 +6,24 @@
 
   <!-- ホームページ -->
   <url>
-    <loc>https://msg-corp.co.jp/</loc>
-    <lastmod>2024-12-01</lastmod>
+    <loc>https://freshjelly.github.io/msg_new_hp/msg_cpnew/</loc>
+    <lastmod>2025-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- プライバシーポリシー -->
   <url>
-    <loc>https://msg-corp.co.jp/privacy-policy.html</loc>
-    <lastmod>2024-12-01</lastmod>
+    <loc>https://freshjelly.github.io/msg_new_hp/msg_cpnew/pages/privacy-policy.html</loc>
+    <lastmod>2025-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- 利用規約 -->
   <url>
-    <loc>https://msg-corp.co.jp/terms-of-service.html</loc>
-    <lastmod>2024-12-01</lastmod>
+    <loc>https://freshjelly.github.io/msg_new_hp/msg_cpnew/pages/terms-of-service.html</loc>
+    <lastmod>2025-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

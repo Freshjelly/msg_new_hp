@@ -1,11 +1,11 @@
 # Robots.txt for MSG株式会社
-# https://msg-corp.co.jp/robots.txt
+# https://freshjelly.github.io/msg_new_hp/msg_new_hp_tabs/robots.txt
 
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://msg-corp.co.jp/sitemap.xml
+Sitemap: https://freshjelly.github.io/msg_new_hp/msg_new_hp_tabs/seo/sitemap.xml
 
 # クロール制限
 Crawl-delay: 1
